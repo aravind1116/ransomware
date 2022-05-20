@@ -1,5 +1,5 @@
 # ransomware
-smol python script that encrypts files on a linux machine. also includes the decrypt code
+a python script that encrypts files on a linux machine. also includes the decrypt code
 
 running voldemort.py will first generate a key and save it as thekey.key . 
 the code then checks for all files in the directory it is present in, and adds them to a list which is named as "files"
